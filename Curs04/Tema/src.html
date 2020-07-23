@@ -1,60 +1,420 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Forms</title>
+  <style>
+    .navigation {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navigation li {
+      display: inline;
+    }
+  </style>
 </head>
+
 <body>
+  <ul class="navigation">
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="home"
+      >Home</a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="place_order"
+      ><b>Place Order</b>
+      </a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="customer_service"
+      >Customer Service</a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Contact"
+      >Contact</a>
+    </li>
+  </ul>
+
+  <h1>Place Order</h1>
+
+  <p>
+    This is the
+    <b>guest checkout</b> .
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2>Products</h2>
+
+  <p>
+    <img
+      src="images/mouse.jpg"
+      alt="mouse"
+    >
+    <a href="https://google.ro">Sterge</a>
+    <a href="https://google.ro">Editeaza</a>
+  </p> <br> <br>
+  <hr>
+
+  <p>
+    <img
+      src="images/extension_chord.jpg"
+      alt="extension_chord"
+    >
+    <a href="https://google.ro">Sterge</a>
+    <a href="https://google.ro">Editeaza</a>
+  </p> <br> <br>
+  <hr>
+
+  <p>
+    <img
+      src="images/phone.jpg"
+      alt="phone"
+    >
+    <a href="https://google.ro">Sterge</a>
+    <a href="https://google.ro">Editeaza</a>
+  </p> <br> <br>
+  <hr>
+
+  <h2>Order Now</h2>
+
+  <p>
+    On our website
+    <i>no account is needed</i> .
+  </p>
+
+  <p>
+  <ol>
+    <li>
+      First we need some info about yourself.
+      <b>Don’t forget to provide a phone</b> .
+    </li>
+    <li>
+      Then we need your <i>real</i> shipping address.
+    </li>
+    <li>
+      Finally, your credit card information.
+    </li>
+  </ol>
+  </p>
+
   <form>
     <fieldset>
       <legend>Personal Information</legend>
-      <p>Title: <label>Mr</label><input type="radio" checked> <label>Ms</label><input type="radio"> <label>Unspecified</label><input type="radio"></p>
-      <label>*Name:</label><input placeholder="Name"><br><br>
-      <label>*Surname:</label><input placeholder="Surname"><br><br>
-      <label>*Email:</label><input placeholder="Email"> <br><br>
-      <label>*Phone</label><input placeholder="Phone"><br><br>
+
+      <p>
+        Title:
+        <label for="mr">Mr</label>
+        <input
+          type="radio"
+          name="gender"
+          id="mr"
+          checked
+        >
+        <label for="ms">Ms</label>
+        <input
+          type="radio"
+          name="gender"
+          id="ms"
+        >
+
+        <label for="unspecified">Unspecified</label>
+        <input
+          type="radio"
+          name="gender"
+          id="unspecified"
+        >
+      </p>
+
+      <label for="personal_information_name">*Name:</label>
+      <input
+        type="text"
+        name="personal_information_name"
+        id="personal_information_name"
+        placeholder="Name"
+        required
+      > <br> <br>
+
+      <label for="personal_information_surname">*Surname:</label>
+      <input
+        type="text"
+        name="personal_information_surname"
+        id="personal_information_surname"
+        placeholder="Surname"
+        required
+      > <br> <br>
+
+      <label for="email">*Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      > <br> <br>
+
+      <label for="personal_information_phone">*Phone</label>
+      <input
+        type="tel"
+        name="personal_information_phone"
+        id="personal_information_phone"
+        placeholder="Phone"
+        required
+      > <br> <br>
     </fieldset>
 
     <fieldset>
       <legend>Address</legend>
-      <label>*Name:</label><input placeholder="Name"><br><br>
-      <label>*Surname:</label><input placeholder="Surname"><br><br>
-      <label>*Phone</label><input placeholder="Phone"><br><br>
-      <label>*Address Line 1:</label><input placeholder="Address Line 1"><br><br>
-      <label>Address Line 2:</label><input placeholder="Address Line 2"><br><br>
-      <label>*City:</label><input placeholder="City"><br><br>
-      <label>*State:</label>
-      <select>
+
+      <label for="address_name">*Name:</label>
+      <input
+        type="text"
+        name="address_name"
+        id="address_name"
+        placeholder="Name"
+        required
+      > <br> <br>
+
+      <label for="address_surname">*Surname:</label>
+      <input
+        type="text"
+        name="address_surname"
+        id="address_surname"
+        placeholder="Surname"
+        required
+      > <br> <br>
+
+      <label for="address_phone">*Phone</label>
+      <input
+        type="text"
+        name="address_phone"
+        id="address_phone"
+        placeholder="Phone"
+        required
+      > <br> <br>
+
+      <label for="address_line_1">*Address Line 1:</label>
+      <input
+        type="text"
+        name="address_line_1"
+        id="address_line_1"
+        placeholder="Address Line 1"
+        required
+      > <br> <br>
+
+      <label for="address_line_2">Address Line 2:</label>
+      <input
+        type="text"
+        name="address_line_2"
+        id="address_line_2"
+        placeholder="Address Line 2"
+      > <br> <br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      > <br> <br>
+
+      <label for="state">*State:</label>
+      <select
+        name="ro"
+        id="state"
+        required
+      >
         <option>--State--</option>
-      </select><br><br>
-      <label>*Postcode</label><input placeholder="Postcode"><br><br>
+        <option value="bucuresti">Bucuresti</option>
+        <option value="cluj-napoca">Cluj-napoca</option>
+        <option value="timisoara">Timisoara</option>
+        <option value="brasov">Brasov</option>
+      </select> <br> <br>
+
+      <label for="postcode">*Postcode</label>
+      <input
+        type="number"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      > <br> <br>
     </fieldset>
 
     <fieldset>
       <legend>Card Information</legend>
-      <label>*Card number</label><input placeholder="Card Number"><br><br>
-      <label>*Name on card</label><input placeholder="Name on card"><br><br>
-      <label>*Expiry Month</label>
-      <select>
-        <option>January</option>
+
+      <label for="card_number">*Card number</label>
+      <input
+        type="number"
+        name="card_number"
+        id="card_number"
+        placeholder="Card Number"
+        required
+      > <br> <br>
+
+      <label for="card_name">*Name on card</label>
+      <input
+        type="text"
+        name="card_name"
+        id="card_name"
+        placeholder="Name on card"
+        required
+      > <br> <br>
+
+      <label for="expiry_month">*Expiry Month</label>
+      <select
+        name="expiry_month"
+        id="expiry_month"
+        required
+      >
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
       </select>
-      <label>*Expiry Year</label>
-      <select>
-        <option>2019</option>
-      </select>    
-      <br><br>
-      <label>*CVV</label><input placeholder="CVV">
-      <p><em>We do not store credit card information!</em></p>
+
+      <label for="expiry_year">*Expiry Year</label>
+      <select
+        name="expiry_year"
+        id="expiry_year"
+        required
+      >
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select> <br> <br>
+
+      <label for="cvv">*CVV</label>
+      <input
+        type="number"
+        name="cvv"
+        id="cvv"
+        placeholder="CVV"
+        required
+      >
+
+      <p>
+        <em>We do not store credit card information!</em>
+      </p>
     </fieldset>
 
     <fieldset>
       <legend>Form Controls</legend>
-      <input type="checkbox"><label>*You are required to agree to the <a href="">terms and conditions</a></label> <br><br>
-      <input type="checkbox"><label>Can we send you emails?</label> <br><br>
-      <input type="checkbox"><label>GDPR generic consent?</label> <br><br>
-      <button>PLACE ORDER</button>
-      <button>Reset</button>
+
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required
+      >
+      <label for="terms">*You are required to agree to the
+        <a href="">terms and conditions</a>
+      </label> <br> <br>
+
+      <input
+        type="checkbox"
+        name="email_consent"
+        id="email_consent"
+      >
+      <label for="email_consent">Can we send you emails?</label>
+      <br> <br>
+
+      <input
+        type="checkbox"
+        name="gdpr"
+        id="gdpr"
+      >
+      <label for="gdpr">GDPR generic consent?</label>
+      <br> <br>
+
+      <button type="submit">PLACE ORDER</button>
+      <button type="reset">Reset</button>
     </fieldset>
   </form>
 
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <ul class="navigation">
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="home"
+      >Home</a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="place_order"
+      ><b>Place Order</b>
+      </a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="customer_service"
+      >Customer Service</a>
+    </li>
+    <li>*</li>
+    <li>
+      <a
+        href="http://google.ro"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Contact"
+      >Contact</a>
+    </li>
+  </ul>
+
 </body>
+
 </html>
