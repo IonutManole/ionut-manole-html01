@@ -55,3 +55,46 @@ padding-left, padding-right -> 19px; */
   padding-right: 19px;
   background-color: green;
 }
+
+/* Tema */
+/* Ex05 Creaza un div cu clasa purple si fundalul mov,
+bordura de 2 px punctata verde, colturile rotunjite de 40
+cu valorile pentru padding:
+padding-left -> 20px
+padding-top -> 10px
+padding-bottom -> 0
+padding-right -> 15px;*/
+
+.purple {
+  border-radius: 40px;
+  border: 2px dotted green;
+  background-color: purple;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 15px;
+}
+
+/* Ex06 Creaza un div cu clasa turquoise si fundalul turcoaz,
+bordura albastra de 1px, colturile rotunjite de 15 cu valorile pentru padding:
+padding-top, padding-bottom -> 11px
+padding-left, padding-right -> 20px*/
+
+.turquoise {
+  border: 1px solid blue;
+  border-radius: 15px;
+  background-color: turquoise;
+  padding: 11px 20px;
+}
+
+/* Ex07 Creaza un div cu clasa transparent, cu bordura rosie de 2px
+ si valorile pentru padding setate la 20 pentru toate partile, si pentru margin:
+margin-bottom, margin-top ->20px;
+margin-left, margin-right -> auto*/
+
+.transparent {
+  border: 2px solid red;
+  padding:20px;
+  margin: 20px auto;
+}
+

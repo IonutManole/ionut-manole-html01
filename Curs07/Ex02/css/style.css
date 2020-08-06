@@ -22,8 +22,6 @@ b {
   color: purple;
 }
 
-/* tema */
-
 /* 12 */
 
 a[href$='.com/'],
@@ -31,4 +29,35 @@ a[href$='.com'],
 a[href*='.com'] {
   color: black;
   text-decoration: underline;
+}
+
+/* Tema */
+/* Ex07  Coloreaza albastru elementele cu clasa line din elementele cu clasa odd*/
+
+.odd .line {
+  color:blue;
+}
+
+/* Ex08 Subliniaza elementele i din elementele cu clasa odd*/
+
+.odd i {
+  text-decoration: underline;
+}
+
+/* Ex09 Subliniaza elementele b din elementele cu clasa even*/
+
+.even b {
+  text-decoration: underline;
+}
+
+/* Ex10 Coloreaza turcoaz doar elementele cu clasa line care se afla in elementele cu clasa desc*/
+
+.desc .line {
+  color:turquoise;
+}
+
+/* Ex11 Coloreaza rosu toate ancorele care au atributul href incepand cu http*/
+
+a[href^="http:"] {
+  color:red;
 }
