@@ -1,12 +1,25 @@
+/* Suprascrie in zona specificata acele reguli de CSS, astfel incat
+Titlul sa fie verde, subliniat si cu un padding de 5px
+Paragraful sa aiba marimea fontului de 25px, italic si culoarea mov */
+
 /* add code here */
 
+#header h1 {
+  color: green;
+  text-decoration: underline;
+  padding: 5px;
+}
 
+p.para {
+  font-size: 25px;
+  font-style: italic;
+  color: yellow;
+}
 
 /* add code here */
-
 
 h1 {
- color: red;
+  color: red;
 }
 
 .header h1 {
@@ -18,6 +31,6 @@ p {
 }
 
 .para {
-  text-decoration: none; 
-  color: blueviolet
+  text-decoration: none;
+  color: blueviolet;
 }
