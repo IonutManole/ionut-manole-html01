@@ -56,3 +56,32 @@ dreapta pe orizontala folosind align-items: center si justify-content: flex-end 
   justify-content: flex-end;
   align-items: center;
 }
+
+/* Tema */
+
+/* Aliniaza elementele din cutia cinci central pe verticala folosind align-items:
+center si folosind justify-content: space-around pentru orizontala */
+
+.stage-05 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Aliniaza elementele din cutia sase pe bordura de jos a cutiei folosind align-items:
+flex-end si folosind justify-content: space-between pentru orizontala */
+
+.stage-06 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Aliniaza elementele din cutia sapte pe bordura de sus folosind align-items:
+flex-start si folosind justify-content: space-evenly pentru orizontala */
+
+.stage-07 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
